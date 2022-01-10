@@ -1,82 +1,133 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
 
-       
-        *{
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-        }
+body {
+  font-family: "Montserrat", sans-serif;
+}
 
-        body{
-            font-family: 'Montserrat', sans-serif;
-        }
+/*
+    layout start
+*/
 
-        .left, .content, .right{
-            height: 100vh;
-            position: absolute;
-        }
+.left,
+.content,
+.right {
+  height: 100vh;
+  position: absolute;
+}
 
-        .left, .right{
-            width: 210px;
-            background-color: rgb(255, 255, 255);
-            box-shadow: 0 0 25px rgba(204, 204, 204, 0.63);
-            z-index:1;
-        }
+.left,
+.right {
+  width: 210px;
+  background-color: rgb(255, 255, 255);
+  box-shadow: 0 0 25px rgba(204, 204, 204, 0.63);
+  z-index: 1;
+}
 
-        .right{
-            right: 0px;
-        }
+.right {
+  right: 0px;
+}
 
-        .content{
-            background-color: rgb(236, 120, 236);
-            width: calc(100vw - (210px + 210px));
-            left: 210px;
-            background:#ededf5;
-        }
+.content {
+  background-color: rgb(236, 120, 236);
+  width: calc(100vw - (210px + 210px));
+  left: 210px;
+  background: #ededf5;
+}
 
-        .heading{
-            text-align: center;
-            margin-top: 50px;
-        }
-        
-        .top-heading{
-            font-size: 10px;
-        }
-        .bottom-heading{
-            font-size: 16px;
-            font-weight:600;
-            color:#45405a;
-        }
-        nav{
-            margin-top: 30px;
-        }
-        nav .nav-item{
-            list-style-type: none;
-            padding: 13px 8px;
-            color:rgb(151, 150, 214);
-        }
-        nav .nav-item.active{
-            background: linear-gradient(to right,rgb(80, 80, 243),rgb(109, 4, 109));
-            color: white;
+/*
+    layout end
+*/
 
-        }
-        nav .nav-item:hover{
-            background-color: rgb(204, 209, 255);
-            color:rgb(151, 150, 214);
-            
-        }
-        nav .nav-item .nav-link{
-            text-decoration: none;
-            color: inherit;
-        }
-        nav .nav-item .nav-link .nav-icon{
-            margin-left: 32px;
-            width:30px;
-            display:inline-block;
-            text-align: center;
-            margin-right: 12px;
+/*
+    navigation start
+*/
 
-        }
-        
-        nav .nav-item .nav-link .nav-text{
-            font-size: 12px;
-        }
+.heading {
+  text-align: center;
+  margin-top: 50px;
+}
+
+.top-heading {
+  font-size: 10px;
+}
+.bottom-heading {
+  font-size: 16px;
+  font-weight: 600;
+  color: #45405a;
+}
+nav {
+  margin-top: 30px;
+}
+nav .nav-item {
+  list-style-type: none;
+  padding: 13px 8px;
+  color: rgb(151, 150, 214);
+}
+nav .nav-item.active {
+  background: linear-gradient(to right, rgb(80, 80, 243), rgb(109, 4, 109));
+  color: white;
+}
+nav .nav-item:hover {
+  background-color: rgb(204, 209, 255);
+  color: rgb(151, 150, 214);
+}
+nav .nav-item .nav-link {
+  text-decoration: none;
+  color: inherit;
+}
+nav .nav-item .nav-link .nav-icon {
+  margin-left: 32px;
+  width: 30px;
+  display: inline-block;
+  text-align: center;
+  margin-right: 12px;
+}
+
+nav .nav-item .nav-link .nav-text {
+  font-size: 12px;
+}
+
+/*
+    navigation end
+*/
+
+/*
+    feed start
+*/
+
+.feed-heading {
+  display: flex;
+  justify-content: space-between;
+  margin: 50px;
+  margin-bottom:30px;
+}
+
+.feed-heading h3 {
+  font-size: 18px;
+  font-weight: 600;
+  color: #959595;
+}
+
+.feed-heading span {
+  color: #a7a7a7;
+  font-size: 14px;
+}
+
+.feed-heading .sort-icon {
+  margin-left: 12px;
+  display: inline-block;
+  position: relative;
+  top: 1px;
+}
+
+.greeting {
+    background: white;
+    padding: 18px 29px;
+    color: gray;
+    font-size: 12px;
+    margin: 0 45px;
+}
